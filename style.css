@@ -1,0 +1,165 @@
+/* ----- Reset ------ */
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --header-height: 2.5rem;
+  /* colors */
+  --hue: 132;
+  /* Hex color mode */
+  --body-color: #ffffff;
+  --button-color: #0ae41c;
+  --button-color-alt: #a200ff;
+  --border-button-color: #000000;
+  --title-color: #000000;
+  --subtitle-color: #a200ff;
+  --text-icon-color: #000000;
+  --text-icon-color-alt: #ffffff;
+  --text-color: #a200ff;
+  --text-copyright-color: #000000;
+  /* Fonts */
+  --title-font: 'Roboto Mono', monospace;
+  --subtitle-font: 'Cairo', sans-serif;
+  --text-font: 'Open Sans', sans-serif;
+  --text-icon-font: 'Inconsolata', monospace;
+
+}
+
+
+/* ----- Base ------ */
+.container {
+  margin: 4rem auto;
+  padding: 1rem auto;
+  width: 300px;
+  text-align: center;
+}
+
+/* ----- Layout ------ */
+body {
+  background-color: var(--body-color);
+}
+
+.title {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: 2rem;
+  word-spacing: -.6rem;
+  letter-spacing: -.6px;
+}
+
+.subtitle {
+  color: var(--subtitle-color);
+  font-family: var(--subtitle-font);
+}
+
+.text-icon a {
+  color: var(--text-icon-color);
+  font-family: var(--text-icon-font);
+}
+
+.text {
+  color: var(--text-color);
+}
+
+.text-copyright {
+  color: var(--text-copyright-color);
+  font-family: var(--text-font);
+  margin-top: 2rem;
+}
+
+/* ----- Home ------ */
+.avatar img {
+  width: 100%;
+  clip-path: circle();
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid var(--button-color);
+  display: inline-flex;
+  align-items: center;
+  padding: .3rem;
+}
+
+.info {
+  margin-bottom: 2rem;
+  line-height: 2rem;
+
+}
+
+.info h1 {
+  margin-top: 2rem;
+
+}
+
+.links li a {
+  border: 2px solid var(--border-button-color);
+  padding: .8rem;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  background-color: var(--button-color);
+  font-size: 1rem;
+  border-radius: 2rem;
+
+}
+
+.links li a:hover {
+  background-color: var(--button-color-alt);
+  transition: 0.5s;
+  color: var(--text-icon-color-alt);
+}
+
+
+.links li span {
+  margin-right: 0.5rem;
+}
+
+/* ----- Icons list ------ */
+.fa-medapps {
+  color: black;
+  align-self: center;
+}
+
+.fa-github {
+  color: black;
+  align-self: center;
+}
+
+.fa-linkedin-in {
+  color: #006194;
+  align-self: center;
+}
+
+.fa-envelope {
+  color: purple;
+  align-self: center;
+}
+
+.fa-whatsapp {
+  color: #24A817;
+  align-self: center;
+}
+
+/* ----- Footer ------ */
+footer .text {
+  margin-top: 2rem;
+}
+
+
+footer .copyright {}
+
+footer span {
+  color: red;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1rem;
+  margin-left: .2rem;
+  font-weight: 600;
+}
